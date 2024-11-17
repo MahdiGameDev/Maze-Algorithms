@@ -20,7 +20,6 @@ GREEN = (0, 255, 0)  # Path color
 RED = (255, 0, 0)  # Path found color
 BLUE = (0, 0, 255)  # Open nodes (currently being explored)
 WHITE = (255, 255, 255)  # Processing nodes
-PURPLE = (128, 0, 128)  # Starting and ending points
 
 GRID_SIZE = 5
 cols = WIDTH // GRID_SIZE
@@ -156,7 +155,7 @@ def draw_path(path):
         pygame.draw.rect(SCREEN, RED, (x * GRID_SIZE, y * GRID_SIZE, GRID_SIZE, GRID_SIZE))
         pygame.draw.rect(SCREEN, RED, (0, 0, GRID_SIZE, GRID_SIZE))
 
-# Main game loop
+# Main game
 def main():
     generate_maze(0, 0)  # Start generating from the top-left corner
 
